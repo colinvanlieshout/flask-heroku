@@ -15,5 +15,6 @@ model = LogisticRegression()
 model.fit(X, y)
 model.score(X, y)
 
+#store the model in a pickle file
 import pickle
 pickle.dump(model, open('model.pkl', 'wb'))
